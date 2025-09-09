@@ -1,0 +1,131 @@
+.siswa-table img.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.siswa-table .avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.siswa-table .avatar-placeholder svg {
+  width: 24px;
+  height: 24px;
+  color: #888;
+}
+.status-badge {
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;
+}
+.status-badge.active {
+  color: #fff;
+  background-color: #198754;
+}
+.status-badge.inactive {
+  color: #fff;
+  background-color: #dc3545;
+}
+.action-buttons {
+  white-space: nowrap;
+}
+.action-buttons button {
+  margin-right: 5px;
+}
+.action-buttons button:last-child {
+  margin-right: 0;
+}
+
+/* Siswa.css */
+.siswa-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  object-fit: cover;
+  border: 2px solid #dee2e6;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.siswa-avatar:hover {
+  transform: scale(1.1);
+}
+
+.avatar-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #dee2e6;
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Tambahkan CSS untuk responsivitas */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table th,
+  .table td {
+    white-space: nowrap;
+  }
+
+  .btn {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Styling untuk nomor urut */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 60px;
+  text-align: center;
+}
+
+/* Styling untuk kolom aksi */
+.table th:last-child,
+.table td:last-child {
+  width: 150px;
+}
+
+/* Styling untuk tombol responsif */
+.fixed-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Alternatif untuk tombol di dalam container */
+@media (max-width: 768px) {
+  .fixed-button-container {
+    position: static;
+    margin-top: 1rem;
+  }
+}
